@@ -1,0 +1,19 @@
+% Simple header for a document.
+
+% The title for the header is specified using the \HeaderTitle command.
+% If this command was not provided, use the default value.
+\providecommand\HeaderTitle{Untitled Document}
+
+\usepackage{fancyhdr}
+\usepackage[
+  top=2cm,
+  bottom=2cm,
+  left=2cm,
+  right=2cm,
+  headheight=17pt, % as per the warning by fancyhdr
+  includehead,includefoot,
+  heightrounded, % to avoid spurious underfull messages
+]{geometry} 
+\pagestyle{fancy}
+\lhead{\HeaderTitle}
+\rhead{Page \thepage}
