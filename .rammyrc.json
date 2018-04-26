@@ -1,0 +1,21 @@
+{
+  "rammyVersion": "0.0.2",
+  "name": "latex-common",
+  "module": true,
+  "templates": {
+    "lecture-notes": {
+      "description": "Template for lecture notes with a lot of useful shorthand commands.",
+      "path": "./templates/lecture-notes.tex"  
+    }
+  },
+  "inputs": {
+    "symbols": {
+      "description": "Common maths symbols (number sets, inner products, norms, etc).",
+      "path": "./symbols.tex"  
+    },
+    "header": {
+      "description": "Simple header for a file (title specified by defining `\\HeaderTitle` command, e.g. `\\newcommand\\HeaderTitle{Problem set solutions}`).",
+      "path": "./header.tex"  
+    }
+  }
+}
