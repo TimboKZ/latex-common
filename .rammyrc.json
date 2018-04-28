@@ -8,7 +8,7 @@
       "path": "./templates/lecture-notes.tex"  
     }
   },
-  "inputs": {
+  "snippets": {
     "symbols": {
       "description": "Common maths symbols (number sets, inner products, norms, etc).",
       "path": "./symbols.tex"  

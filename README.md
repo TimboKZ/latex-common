@@ -21,7 +21,8 @@ git submodule add https://github.com/TimboKZ/latex-common.git latex-common
 # Using Rammy
 
 If you have [Node.js](https://nodejs.org/) installed, you can use templates and
-snippets in this repo via Rammy. Installation instructions:
+snippets in this repo via [Rammy](https://github.com/TimboKZ/Rammy).
+Installation instructions:
 
 ```bash
 # Install Rammy
@@ -30,11 +31,10 @@ npm install -g rammy
 # Prepare a folder for the project, clone this repo into it
 mkdir my-project
 cd my-project
-git clone https://github.com/TimboKZ/latex-common.git
 
 # Initialise a Rammy project, add this repo as a module
 rammy init
-rammy add ./latex-common
+rammy add TimboKZ/latex-common
 
 # List templates and inputs Rammy discovered
 rammy list
