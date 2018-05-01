@@ -1,21 +1,25 @@
 {
-  "rammyVersion": "0.0.2",
+  "rammyVersion": "0.1.0",
   "name": "latex-common",
   "module": true,
   "templates": {
     "lecture-notes": {
-      "description": "Template for lecture notes with a lot of useful shorthand commands.",
+      "description": "Template for lecture notes with a lot of useful snippets.",
       "path": "./templates/lecture-notes.tex"  
     }
   },
   "snippets": {
     "symbols": {
-      "description": "Common maths symbols (number sets, inner products, norms, etc).",
-      "path": "./symbols.tex"  
+      "description": "Common math symbols and shorthand commands.",
+      "path": "./snippets/symbols.tex"  
     },
-    "header": {
-      "description": "Simple header for a file (title specified by defining `\\HeaderTitle` command, e.g. `\\newcommand\\HeaderTitle{Problem set solutions}`).",
-      "path": "./header.tex"  
+    "compact-header": {
+      "description": "Compact header for a document.",
+      "path": "./snippets/compact-header.tex"  
+    },
+    "urls": {
+      "description": "`hyperref` package with blue links.",
+      "path": "./snippets/urls.tex"
     }
   }
 }

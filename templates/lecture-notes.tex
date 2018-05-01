@@ -1,19 +1,52 @@
+%-- summary: Template for lecture notes with a lot of useful snippets.
+
 \documentclass{article}
-\usepackage{hyperref}
+
+% Title for the `compact-header` snippet
 \newcommand\HeaderTitle{\textbf{CS 666 Lecture Notes} by Timur Kuzhagaliyev}
 
 %-- Rammy start ----------------
-\input{../symbols.tex} %-- snippet: symbols
-\input{../header.tex} %-- snippet: header 
+\input{../snippets/symbols.tex} %-- snippet: symbols
+\input{../snippets/compact-header.tex} %-- snippet: compact-header 
+\input{../snippets/urls.tex} %-- snippet: urls
 %-- Rammy end ------------------
 
 % Don't wrap long matrices
 \setcounter{MaxMatrixCols}{20}
+
 \begin{document}
 
 
-\section{Description}
-This tempalte was meant to be used for lecture notes.
+%-- example usage start
+\section{Lecture notes template}
+This template was meant to be used for lecture notes.
+
+\section{Features}
+It has a lot of useful
+shorthand commands defined that make writing math formulas easy: 
+$$ \norm{\M^{m \x n}} \ra \inr{v, u}$$
+
+This template has coloured links: \url{https://github.com/TimboKZ/latex-common}
+
+It also supports long matrices:
+\[
+Z =
+\begin{bmatrix}
+    q_{sum1} & q_{sum2} & q_{sum3} & 0 & 0 & 0 & 0 & 0 & 0 & m & 0 & 0 \\
+    0 & 0 & 0 & q_{sum1} & q_{sum2} & q_{sum3} & 0 & 0 & 0 & 0 & m & 0 \\
+    0 & 0 & 0 & 0 & 0 & 0 & q_{sum1} & q_{sum2} & q_{sum3} & 0 & 0 & m \\
+    x_{11} & x_{21} & x_{31} & 0 & 0 & 0 & 0 & 0 & 0 & q_{sum1} & 0 & 0 \\
+    x_{12} & x_{22} & x_{32} & 0 & 0 & 0 & 0 & 0 & 0 & q_{sum2} & 0 & 0 \\
+    \hdotsfor{12} \\
+    \hdotsfor{12} \\
+    \hdotsfor{12} \\
+    \hdotsfor{12} \\
+    \hdotsfor{12} \\
+    \hdotsfor{12} \\
+    0 & 0 & 0 & 0 & 0 & 0 & x_{13} & x_{23} & x_{33} & 0 & 0 & q_{sum3} \\
+\end{bmatrix}
+\]
+%-- example usage end
 
 
 \end{document}
