@@ -20,6 +20,14 @@
     "urls": {
       "description": "`hyperref` package with blue links.",
       "path": "./snippets/urls.tex"
+    },
+    "figures": {
+      "description": "Collection of TeX packages for figure management.",
+      "path": "./snippets/figures.tex"
+    },
+    "code": {
+      "description": "Packages and style adjustments for source code.",
+      "path": "./snippets/code.tex"
     }
   }
 }
