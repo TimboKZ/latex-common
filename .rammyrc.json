@@ -28,6 +28,10 @@
     "code": {
       "description": "Packages and style adjustments for source code.",
       "path": "./snippets/code.tex"
+    },
+    "misc": {
+      "description": "Convenient miscellaneous commands.",
+      "path": "./snippets/misc.tex"
     }
   }
 }
