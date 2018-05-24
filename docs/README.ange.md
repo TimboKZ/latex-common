@@ -1,3 +1,4 @@
+<%# output: ../README.md -%>
 # latex-common
 
 Useful LaTeX snippets and templates. This repository is a
@@ -8,16 +9,19 @@ Useful LaTeX snippets and templates. This repository is a
 Here you will find a brief overview of each snippet and template. Check the 
 source code of each file for more info.
 
+<% const moduleConfig = require('../.rammyrc.json'); -%>
 
 **Templates:**
-* **lecture-notes** (`./templates/lecture-notes.tex`) Template for lecture notes with a lot of useful snippets.
+<% for (const templateName in moduleConfig.templates) { -%>
+<% const template = moduleConfig.templates[templateName]; -%>
+* **<%- templateName %>** (`<%- template.path %>`) <%- template.description %>
+<% } -%>
 
 **Snippets:**
-* **symbols** (`./snippets/symbols.tex`) Common math symbols and shorthand commands.
-* **compact-header** (`./snippets/compact-header.tex`) Compact header for a document.
-* **urls** (`./snippets/urls.tex`) `hyperref` package with blue links.
-* **figures** (`./snippets/figures.tex`) Collection of TeX packages for figure management.
-* **code** (`./snippets/code.tex`) Packages and style adjustments for source code.
+<% for (const snippetName in moduleConfig.snippets) { -%>
+<% const snippet = moduleConfig.snippets[snippetName]; -%>
+* **<%- snippetName %>** (`<%- snippet.path %>`) <%- snippet.description %>
+<% } -%>
 
 # Using with Rammy
 

@@ -1,0 +1,27 @@
+{
+  "name": "latex-common",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Useful LaTeX snippets that can be added to a document using the `\\input{../path/to.tex} ` command.",
+  "main": "index.js",
+  "scripts": {
+    "doc": "ange ./docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimboKZ/latex-common.git"
+  },
+  "author": {
+    "name": "Timur Kuzhagaliyev",
+    "email": "tim.kuzh@gmail.com",
+    "url": "https://foxypanda.me/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TimboKZ/latex-common/issues"
+  },
+  "homepage": "https://github.com/TimboKZ/latex-common#readme",
+  "devDependencies": {
+    "ange": "^1.0.0"
+  }
+}
