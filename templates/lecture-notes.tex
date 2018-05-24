@@ -3,7 +3,7 @@
 \documentclass{article}
 
 % Title for the `compact-header` snippet
-\newcommand\HeaderTitle{\textbf{CS 666 Lecture Notes} by Timur Kuzhagaliyev}
+\newcommand\HeaderTitle{\textbf{CS 123 Lecture Notes} by Timur Kuzhagaliyev}
 
 %-- Rammy start ----------------
 \input{../snippets/symbols.tex} %-- snippet: symbols
@@ -22,16 +22,72 @@
 
 %-- example usage start
 \section{Lecture notes template}
-This template was meant to be used for lecture notes.
+This template was meant to be used for lecture notes. It has a lot of useful
+shorthand commands, packages and settings defined to make lecture note writing
+an effortless process. Refer to section \ref{sec:features} for some examples.
 
-\section{Features}
-It has a lot of useful
-shorthand commands defined that make writing math formulas easy: 
-$$ \norm{\M^{m \x n}} \ra \inr{v, u} $$
 
-This template has coloured links: \url{https://github.com/TimboKZ/latex-common}
+\section{Features}\label{sec:features}
+Most of the features of this template come from different TeX snippets defined
+in the \code{latex-common} Rammy module. Check
+\href{th://github.com/TimboKZ/latex-common}{its GitHub page} for the full list
+of a available snippets.
 
-It also supports long matrices:
+\subsection{Snippet: \texttt{compact-header}}
+The small header you see at the top of this page is a part of this template.
+You can customise its content by (re)defining the \code{\textbackslash
+HeaderTitle} command.
+
+This snippet also defines the page margins.
+
+
+\subsection{Snippet: \texttt{symbols}}
+
+This template includes a lot of useful Math symbols. Here's a quick preview:
+
+\[
+\begin{array}{lll}%
+    \R^n \x \R^m & \qquad \M_{r \x k} \qquad & \C, \Z, \Q \\
+    \\
+    f: \R^n \ra \R & \qquad \frac{df}{dt}\evalat_{t=4} \qquad & A \tens B \\
+    \\
+    \inr{v, u} & \qquad \inner \qquad & \norm{A} \\
+\end{array}
+\]
+
+See the source code of the \code{symbols} snippet for more info.
+
+
+\subsection{Snippet: \texttt{code}}
+
+As the name implies, this snippet adds a bunch of code-related features.
+Code snippets should be inserted using the \code{lstlisting}} environment:
+
+\begin{lstlisting}[language=javascript]
+/**
+  * This code snippet was taken from Rammy CLI tests.
+  */
+describe('rammy init', () => {
+    it('should succeed in an empty directory', () => {
+        TU.removeFixture(configName);
+        assertRammyCommand('init', 0);
+        assert.isTrue(TU.hasFixture(configName), 'Config file was not created!');
+    });
+    it('should fail when a project has already been initialised', () => {
+        assertRammyCommand('init', 1);
+    });
+});
+\end{lstlisting}
+
+Additionally, the \code{\textbackslash code} command can be used to insert
+inline code snippets.
+
+
+\subsection{Other snippets and features}
+
+This template has coloured links:
+\url{https://github.com/TimboKZ/latex-common}. It also supports long matrices:
+
 \[
 Z =
 \begin{bmatrix}
@@ -50,6 +106,10 @@ Z =
 \end{bmatrix}
 \]
 %-- example usage end
+
+This template doesn't use standard \LaTeX fonts - it uses a sans-serif font for
+the main text and Inconsolota as the monospace font. The packages needed for
+common figure functionality are also included via the \code{figures} snippet.
 
 
 \end{document}
