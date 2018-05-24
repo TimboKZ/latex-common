@@ -18,6 +18,7 @@ source code of each file for more info.
 * **urls** (`./snippets/urls.tex`) `hyperref` package with blue links.
 * **figures** (`./snippets/figures.tex`) Collection of TeX packages for figure management.
 * **code** (`./snippets/code.tex`) Packages and style adjustments for source code.
+* **misc** (`./snippets/misc.tex`) Convenient miscellaneous commands.
 
 # Using with Rammy
 
