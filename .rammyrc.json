@@ -6,16 +6,24 @@
     "lecture-notes": {
       "description": "Template for lecture notes with a lot of useful snippets.",
       "path": "./templates/lecture-notes.tex"  
+    },
+    "problem-set": {
+      "description": "Template for problem set solutions..",
+      "path": "./templates/problem-set.tex"  
     }
   },
   "snippets": {
-    "symbols": {
-      "description": "Common math symbols and shorthand commands.",
-      "path": "./snippets/symbols.tex"  
-    },
     "compact-header": {
       "description": "Compact header for a document.",
       "path": "./snippets/compact-header.tex"  
+    },
+    "problem-set-header": {
+      "description": "Header for the `problem-set` template.",
+      "path": "./snippets/problem-set-header.tex"  
+    },
+    "symbols": {
+      "description": "Common math symbols and shorthand commands.",
+      "path": "./snippets/symbols.tex"  
     },
     "urls": {
       "description": "`hyperref` package with blue links.",

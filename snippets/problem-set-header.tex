@@ -1,0 +1,37 @@
+%-- summary: Header for the `problem-set` template.
+
+% These commands specify the subhect and the author for the header. Use 
+% `\newcommand ...` to define them in your template.
+\providecommand\HeaderSubject{CS~124~~~Operating Systems}
+\providecommand\HeaderAuthor{Timur Kuzhagaliyev}
+
+\setlength{\oddsidemargin}{0.25 in}
+\setlength{\evensidemargin}{-0.25 in}
+\setlength{\topmargin}{-0.6 in}
+\setlength{\textwidth}{6.5 in}
+\setlength{\textheight}{8.5 in}
+\setlength{\headsep}{0.75 in}
+\setlength{\parindent}{0 in}
+\setlength{\parskip}{0.1 in}
+
+\newcommand{\problemset}[3]{
+   \pagestyle{myheadings}
+   \thispagestyle{plain}
+   \newpage
+   \setcounter{lecnum}{#1}
+   \setcounter{page}{1}
+   \noindent
+   \begin{center}
+   \framebox{
+      \vbox{\vspace{2mm}
+    \hbox to 6.28in { {\bf \HeaderSubject \hfill \HeaderAuthor} }
+       \vspace{4mm}
+       \hbox to 6.28in { {\Large \hfill #1  \hfill} }
+       \vspace{2mm}
+       \hbox to 6.28in { {\it #2 \hfill #3} }
+      \vspace{2mm}}
+   }
+   \end{center}
+   \vspace*{4mm}
+}
+

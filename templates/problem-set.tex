@@ -1,0 +1,63 @@
+%-- summary: Template for lecture notes with a lot of useful snippets.
+
+\documentclass{article}
+
+% Title for the `compact-header` snippet
+\newcommand\HeaderSubject{CS 124~~~Operating Systems}
+\newcommand\HeaderAuthor{Timur Kuzhagaliyev}
+
+%-- Rammy start ----------------
+\input{../snippets/symbols.tex} %-- snippet: symbols
+\input{../snippets/problem-set-header.tex} %-- snippet: compact-header 
+\input{../snippets/urls.tex} %-- snippet: urls
+\input{../snippets/figures.tex} %-- snippet: figures
+\input{../snippets/code.tex} %-- snippet: code
+\input{../snippets/misc.tex} %-- snippet: misc
+%-- Rammy end ------------------
+
+% Don't wrap long matrices
+\setcounter{MaxMatrixCols}{20}
+
+\begin{document}
+\problemset{Problem Set \#2 Solutions}{Out: May 22}{Due: \bf {June 1}}
+
+
+%-- example usage start
+This template is meant to be used for problem set solutions. It has features
+similar to that of the \code{lecture-notes} template - check it out for the
+preview of what is possible.
+
+\begin{enumerate}
+    \item Define the {\em triangle-rank} of a Boolean matrix to be the
+      sidelength of the largest square submatrix (possibly after permuting
+      the rows and columns) with ones on the diagonal
+      and zeros below the diagonal. Notice that triangle-rank is at
+      most the standard rank.  
+    \begin{enumerate}
+        \item Consider a matrix $M$ with rows and columns indexed by sets $X$
+          and $Y$. For subsets $S \subset X$ and $T \subset Y$, denote by
+          $M_1$ the submatrix of $M$ restricted to rows indexed by $S$ and
+          denote by $M_2$ the submatrix of $M$ restricted to columns indexed
+          by $T$. Show that \[\mbox{triangle-rank}(M_1) +
+          \mbox{triangle-rank}(M_2) \le \mbox{triangle-rank}(M).\]
+        \item Let $M_f$ be the matrix associated with function $f:X \times Y
+          \rightarrow \{0,1\}$. Prove that 
+        \[D(M_f) \le (\log_2(\mbox{triangle-rank}(M_f)+1) + 1)(N^0(M_f) + 1).\]
+        Hint: Induction on triangle-rank. Fix a $0$-cover. Alice should focus
+        on rectangles $S \times T$ in this cover for which restricting $M$ to
+        the rows indexed by $S$ reduces the triangle rank by at least a factor
+        $2$; Bob should focus on rectangles $S \times T$ in this cover for
+        which restricting $M$ to the columns indexed by $T$ reduces the
+        triangle rank by at least a factor of $2$. 
+    \end{enumerate}
+
+    \item The section above is not a solution to a problem set question, but
+        rather a question taken out of a CS 153 problem set I received at
+        Caltech.  Nevertheless, it has the structure that problem set solutions
+        usually have, so I'm going to leave it there.
+\end{enumerate}
+
+%-- example usage end
+
+
+\end{document}
