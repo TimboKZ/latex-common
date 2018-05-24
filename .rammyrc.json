@@ -8,7 +8,7 @@
       "path": "./templates/lecture-notes.tex"  
     },
     "problem-set": {
-      "description": "Template for problem set solutions..",
+      "description": "Template for problem set solutions.",
       "path": "./templates/problem-set.tex"  
     }
   },

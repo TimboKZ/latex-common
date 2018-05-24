@@ -12,10 +12,12 @@ compiled `.pdf`s have been included in the `templates/` folder.
 
 **Templates:**
 * **lecture-notes** (`./templates/lecture-notes.tex`) Template for lecture notes with a lot of useful snippets.
+* **problem-set** (`./templates/problem-set.tex`) Template for problem set solutions.
 
 **Snippets:**
-* **symbols** (`./snippets/symbols.tex`) Common math symbols and shorthand commands.
 * **compact-header** (`./snippets/compact-header.tex`) Compact header for a document.
+* **problem-set-header** (`./snippets/problem-set-header.tex`) Header for the `problem-set` template.
+* **symbols** (`./snippets/symbols.tex`) Common math symbols and shorthand commands.
 * **urls** (`./snippets/urls.tex`) `hyperref` package with blue links.
 * **figures** (`./snippets/figures.tex`) Collection of TeX packages for figure management.
 * **code** (`./snippets/code.tex`) Packages and style adjustments for source code.
