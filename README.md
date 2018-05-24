@@ -6,7 +6,8 @@ Useful LaTeX snippets and templates. This repository is a
 # Overview
 
 Here you will find a brief overview of each snippet and template. Check the 
-source code of each file for more info.
+source code of each file for more info. To make it easier to preview templates,
+compiled `.pdf`s have been included in the `templates/` folder.
 
 
 **Templates:**
