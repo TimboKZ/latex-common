@@ -12,11 +12,30 @@
 \newcommand\lra{\leftrightarrow}
 \newcommand\Lra{\Leftrightarrow}
 
-% Norm and inner product
+
+% "Given that" for probability. This can be scaled manually, e.g. \given[\big]
+\newcommand\given[1][]{\:#1\vert\:}
+
+
+% Inner product
 \usepackage{amsmath}
 \newcommand{\inner}{\langle\cdot,\cdot\rangle}
 \newcommand{\inr}[1]{\langle #1\rangle}
 \newcommand\norm[1]{\left\lVert #1 \right\rVert}
+
+
+% Absolute value and norm
+\usepackage{mathtools}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}%
+% Add a star (e.g. `\abs*{x}`) if you don't want the lines to be stretched
+\makeatletter
+\let\oldabs\abs
+\def\abs{\@ifstar{\oldabs}{\oldabs*}}
+\let\oldnorm\norm
+\def\norm{\@ifstar{\oldnorm}{\oldnorm*}}
+\makeatother
+
 
 % Tensor product
 \newcommand{\tens}{%
