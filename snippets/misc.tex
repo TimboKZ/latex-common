@@ -14,10 +14,12 @@
 \providecommand\italic{}
 \renewcommand{\italic}[1]{\textit{#1}}
 
-% A command to mark the current slide (useful for lecture notes). Draws a line
-% and prints the number of the slide.
+% A command to mark the start of a new lecture or slide (useful for lecture
+% notes).  Draws a line and prints the number of the slide.
+\newcommand{\lecturemark}[2]{\vspace{20px}\noindent{\color{gray}\bold{Lecture
+#1} #2 \sout{\hfill}}\vspace{10px}}
 \newcommand{\slidemark}[1]{\vspace{10px}\noindent{\color{gray}\bold{Slide #1}
-\sout{\hfill}}\vspace{5px}}
+}\vspace{5px}}
 
 % Use sans-serif fonts
 \def\rmdefault{bch}
