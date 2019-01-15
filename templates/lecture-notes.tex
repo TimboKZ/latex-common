@@ -51,12 +51,16 @@ This snippet also defines the page margins.
 This template includes a lot of useful Math symbols. Here's a quick preview:
 
 \[
-\begin{array}{lll}%
+\begin{array}{|c|c|c|}%
+    \hline
     \R^n \x \R^m & \qquad \M_{r \x k} \qquad & \C, \Z, \Q \\
-    \\
+    \hline
     f: \R^n \ra \R & \qquad \frac{df}{dt}\evalat_{t=4} \qquad & A \tens B \\
-    \\
+    \hline
     \inr{v, u} & \qquad \inner \qquad & \norm{A} \\
+    \hline
+    \E \left[ x \right] & U \indep V & \Pr (x \given y) \\
+    \hline
 \end{array}
 \]
 
@@ -66,7 +70,7 @@ See the source code of the \code{symbols} snippet for more info.
 \subsection{Snippet: \texttt{code}}
 
 As the name implies, this snippet adds a bunch of code-related features.
-Code snippets should be inserted using the \code{lstlisting}} environment:
+Code snippets should be inserted using the \code{lstlisting} environment:
 
 \begin{lstlisting}[language=javascript]
 /**
@@ -111,7 +115,7 @@ Z =
 \end{bmatrix}
 \]
 
-This template doesn't use standard $\LaTeX$ fonts - it uses a sans-serif font for
+This template doesn't use standard \LaTeX fonts - it uses a sans-serif font for
 the main text and Inconsolota as the monospace font. The packages needed for
 common figure functionality are also included via the \code{figures} snippet.
 %-- example usage end
